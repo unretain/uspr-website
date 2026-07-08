@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>USPR · United States Power Reserve</title>
+<meta name="description" content="USPR — the United States Power Reserve. AI is the hungriest machine ever built. The grid is the trade. A meme, on Solana." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== TOP LIVE TICKER ===== -->
+<div class="breaking" id="top">
+  <span class="dot"></span>
+  <strong>LIVE&nbsp;·&nbsp;BREAKING</strong>
+  <div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <a class="brand" href="#top">
+    <img class="brand-coin" src="image.png" alt="USPR" />
+    <span class="brand-txt"><b>USPR</b><em>United States Power Reserve</em></span>
+  </a>
+  <nav class="links" id="navLinks">
+    <a href="#dossier">Dossier</a>
+    <a href="#load">The Load</a>
+    <a href="#footprint">Footprint</a>
+    <a href="#money">Smart Money</a>
+    <a href="#buy">How to Buy</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a class="cta" href="#buy">BUY $USPR</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="menu">☰</button>
+</header>
+
+<!-- ===== HERO (full screen, animated power bg) ===== -->
+<section class="hero">
+  <!-- optional AI-generated video: drop a file named bg.mp4 in this folder and it auto-plays -->
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline poster="">
+    <source src="bg.mp4" type="video/mp4" />
+  </video>
+  <canvas class="hero-canvas" id="powerCanvas"></canvas>
+  <div class="hero-veil"></div>
+
+  <div class="hero-inner">
+    <img class="hero-coin" src="image.png" alt="United States Power Reserve seal" />
+    <div class="badge">★ STRATEGIC POWER ASSET · SOLANA · EST. 2026 ★</div>
+    <h1 class="hero-title">UNITED STATES<br/><span class="gold">POWER RESERVE</span></h1>
+    <p class="hero-sub">AI is the <em>hungriest</em> machine ever built. It doesn't run on hope — it runs on <b>electricity</b>. $USPR is the meme on the only resource the future can't function without.</p>
+    <div class="hero-btns">
+      <a class="btn btn-gold" href="#buy">ACQUIRE $USPR →</a>
+      <a class="btn btn-ghost" href="#dossier">Read the Dossier</a>
+    </div>
+    <div class="hero-metrics">
+      <div><span class="num" id="mPrice">$0.00061</span><label>$USPR</label></div>
+      <div><span class="num" data-count="1000000000">0</span><label>Supply</label></div>
+      <div><span class="num">0%</span><label>Tax</label></div>
+      <div><span class="num">100%</span><label>LP Burned</label></div>
+    </div>
+  </div>
+  <div class="scroll-cue">▼ scroll</div>
+</section>
+
+<!-- ===== DOSSIER ===== -->
+<section class="sec" id="dossier">
+  <div class="sec-head"><span class="sno">§ 01</span><h2>THE DOSSIER</h2></div>
+  <div class="two">
+    <div>
+      <p class="big">Every AI prompt, every model, every data center <em>burns power.</em></p>
+      <p>The smartest machines ever built share one ruthless dependency: electricity, in quantities the grid was never designed to deliver. Demand is going vertical and supply is not. That gap is the trade.</p>
+      <p>$USPR tokenizes the most obvious macro thesis of the decade as a pure meme. No fake utility. No staking theater. Just the seal, the lightning, and the only commodity the future literally cannot run without.</p>
+      <ul class="checks">
+        <li>Contract renounced — no dev mint, no hidden levers.</li>
+        <li>Liquidity burned — the floor is the floor.</li>
+        <li>Community-run. Powered by the people.</li>
+      </ul>
+    </div>
+    <aside class="callout">
+      <h4>CLASSIFIED SUMMARY</h4>
+      <dl>
+        <dt>Asset</dt><dd>$USPR</dd>
+        <dt>Class</dt><dd>Strategic Power Reserve</dd>
+        <dt>Chain</dt><dd>Solana (SPL)</dd>
+        <dt>Thesis</dt><dd>Demand ↑ · Grid flat</dd>
+        <dt>Clearance</dt><dd>DEGEN / TOP SECRET</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ===== THE LOAD ===== -->
+<section class="sec dark" id="load">
+  <div class="sec-head"><span class="sno">§ 02</span><h2>THE LOAD</h2></div>
+  <p class="sub">What it actually costs to keep the machines thinking.</p>
+  <div class="cards3">
+    <div class="card"><span class="kicker">DATA-CENTER DRAW</span><b class="huge"><span data-count="945">0</span><small>TWh</small></b><label>Projected global data-center electricity use by 2030 — more than entire nations.</label></div>
+    <div class="card"><span class="kicker">PER QUERY</span><b class="huge"><span data-count="10">0</span>×</b><label>A single AI query can pull ~10× the power of a normal web search.</label></div>
+    <div class="card"><span class="kicker">NEW LOAD</span><b class="huge"><span data-count="100">0</span><small>GW+</small></b><label>New generation the U.S. may need this decade just to feed compute.</label></div>
+  </div>
+  <p class="muted center">Figures are directional and used for meme/illustrative purposes.</p>
+</section>
+
+<!-- ===== FOOTPRINT ===== -->
+<section class="sec" id="footprint">
+  <div class="sec-head"><span class="sno">§ 03</span><h2>THE FOOTPRINT</h2></div>
+  <p class="sub">Who's drinking the grid dry. (relative, illustrative)</p>
+  <div class="bars">
+    <div class="bar"><span class="bl">Hyperscaler A</span><div class="bt"><i style="--w:92%"></i></div><span class="bv">92</span></div>
+    <div class="bar"><span class="bl">Hyperscaler B</span><div class="bt"><i style="--w:80%"></i></div><span class="bv">80</span></div>
+    <div class="bar"><span class="bl">Hyperscaler C</span><div class="bt"><i style="--w:68%"></i></div><span class="bv">68</span></div>
+    <div class="bar"><span class="bl">Hyperscaler D</span><div class="bt"><i style="--w:54%"></i></div><span class="bv">54</span></div>
+    <div class="bar"><span class="bl">Frontier Labs</span><div class="bt"><i style="--w:47%"></i></div><span class="bv">47</span></div>
+  </div>
+</section>
+
+<!-- ===== SMART MONEY ===== -->
+<section class="sec dark" id="money">
+  <div class="sec-head"><span class="sno">§ 04</span><h2>SMART MONEY IS WATCHING</h2></div>
+  <p class="sub">Power is the new oil. The packaging is the meme.</p>
+  <div class="people">
+    <figure class="person"><div class="ph"><span>⚡</span></div><figcaption><b>Grid Maxis</b><span>Long electrons, forever.</span></figcaption></figure>
+    <figure class="person"><div class="ph"><span>🏭</span></div><figcaption><b>Utility Whales</b><span>Megawatts &gt; megacaps.</span></figcaption>
+    </figure>
+    <figure class="person"><div class="ph"><span>🤖</span></div><figcaption><b>Compute Hawks</b><span>Every GPU needs a wall socket.</span></figcaption></figure>
+    <figure class="person"><div class="ph"><span>💎</span></div><figcaption><b>Diamond Grid</b><span>Hands that never brown out.</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- ===== CATALYST / COUNTDOWN ===== -->
+<section class="sec" id="catalyst">
+  <div class="sec-head"><span class="sno">§ 05</span><h2>THE CATALYST</h2></div>
+  <div class="catalyst">
+    <p>Gigawatt campuses. Reactor restarts. Grid buildouts measured in the trillions. The power reserve is being formalized — phase by phase, the mandate energizes.</p>
+    <div class="countdown" id="countdown">
+      <div><b id="cd-d">00</b><span>DAYS</span></div>
+      <div><b id="cd-h">00</b><span>HRS</span></div>
+      <div><b id="cd-m">00</b><span>MIN</span></div>
+      <div><b id="cd-s">00</b><span>SEC</span></div>
+    </div>
+    <p class="muted">until the next reserve phase. (countdown is for the meme.)</p>
+  </div>
+</section>
+
+<!-- ===== HOW TO BUY ===== -->
+<section class="sec dark" id="buy">
+  <div class="sec-head"><span class="sno">§ 06</span><h2>HOW TO POWER UP</h2></div>
+  <div class="steps">
+    <div class="step"><span>1</span><h4>Get a Wallet</h4><p>Install <b>Phantom</b> or <b>Solflare</b> — extension or mobile.</p></div>
+    <div class="step"><span>2</span><h4>Fund with SOL</h4><p>Buy SOL on any exchange and send it to your wallet.</p></div>
+    <div class="step"><span>3</span><h4>Swap for $USPR</h4><p>Open Jupiter or Raydium, paste the contract, swap.</p></div>
+    <div class="step"><span>4</span><h4>Hold the Line</h4><p>Diamond grid only. The reserve rewards conviction.</p></div>
+  </div>
+  <div class="ca">
+    <label>OFFICIAL CONTRACT ADDRESS</label>
+    <div class="ca-box">
+      <code id="ca">USPRxxxxPowerReservexxxxSoLanaxxxxMeme2026</code>
+      <button id="copyCa" class="btn btn-gold sm">COPY</button>
+    </div>
+    <small>Always verify the address from official channels. There is only one reserve.</small>
+  </div>
+</section>
+
+<!-- ===== TOKENOMICS ===== -->
+<section class="sec" id="tokenomics">
+  <div class="sec-head"><span class="sno">§ 07</span><h2>TOKENOMICS</h2></div>
+  <table class="tok">
+    <tbody>
+      <tr><th>Total Supply</th><td>1,000,000,000 $USPR</td><td class="ok">✔ Fixed</td></tr>
+      <tr><th>Liquidity</th><td>Burned at launch</td><td class="ok">✔ Locked</td></tr>
+      <tr><th>Buy / Sell Tax</th><td>0% / 0%</td><td class="ok">✔ Zero</td></tr>
+      <tr><th>Contract</th><td>Renounced</td><td class="ok">✔ Renounced</td></tr>
+      <tr><th>Team Allocation</th><td>0% — fair launch</td><td class="ok">✔ Fair</td></tr>
+    </tbody>
+  </table>
+  <p class="muted center">No taxes. No tricks. No team bags. Just the meme and the megawatts.</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="f-top">
+    <div class="f-brand"><img src="image.png" alt="" class="f-coin" /> USPR</div>
+    <nav class="f-links">
+      <a href="#dossier">Dossier</a>
+      <a href="#load">The Load</a>
+      <a href="#buy">How to Buy</a>
+      <a href="#tokenomics">Tokenomics</a>
+    </nav>
+  </div>
+  <p class="disclaimer">
+    <b>DISCLAIMER:</b> $USPR is a meme coin created purely for entertainment. It has no intrinsic value, no expectation of financial return, and no official team, roadmap, or affiliation with any company, utility, government agency, or office. This is a parody. Nothing here is financial advice. Cryptocurrency is extremely high-risk — never invest more than you can afford to lose. Statistics shown are directional and illustrative.
+  </p>
+  <p class="copy">© 2026 USPR · United States Power Reserve · A meme powered by the people.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
